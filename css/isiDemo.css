@@ -1,0 +1,235 @@
+.affix {
+    top: 50px;
+    width: 100%;
+}
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+/* body styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 30px;
+    z-index: 0;
+}
+.placeholderContainers {
+    padding: 15px;
+}
+.innerContainer {
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 250px;
+}
+.placeholderBodyText {
+/*    font-size: 18px;*/
+    font-weight: 200;
+    text-align: justify;
+}
+#triggerPointForISIMerge {
+    height: 50px;
+    /*    background-color: red;*/
+}
+.footer {
+    width: 100%;
+    height: 250px;
+    margin-top: 10%;
+    position: relative;
+    background-color: #6e6e6e;
+    color: white;
+}
+
+
+/* ISI container specific styles */
+#isiModal {
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+
+    background-color: #ffffff;
+    height: 180px;
+    bottom: 0px;
+    padding: 0px !important;
+}
+.isiModal-addShadow {
+    -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+        -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+        box-shadow: 0px 0px 10px rgba(0,0,0,.6);
+}
+.isiModal-removeShadow {
+    -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+}
+.isiHeaderStripWrapper {
+    background-color: #00a1de;
+    height: 60px;
+}
+.isiHeaderStripWrapper :hover {
+    cursor: pointer;
+}
+.isiHeader {
+    padding-top: 5px;
+/*            padding-bottom: 5px;*/
+    background-color: #00a1de;
+}
+.isiHeaderTitle {
+/*    font-size: 18px;*/
+    color: white;
+}
+.isiHeaderWarning {
+/*    font-size: 18px;*/
+    color: white;
+}
+#isiButtonAnchor {
+    float: right;
+}
+#isiButton :hover {
+    text-decoration: none !important;
+}
+#isiButton {
+    transform: translate(-15px,-50%);
+    text-align: right;
+    border-radius: 0px !important;
+    color: white !important;
+/*    font-size: 18px;*/
+    height: 30px;
+    width: 140px;
+    background-color: #00a1de; /*00729c original button color */
+}
+#isiToggleArrow {
+    width: 20px;
+    height: 12px;
+}
+#isiBodyWrapper {
+    background-color: #ffffff;
+/*            height: 1500px;*/
+}
+#isiPeekingContentWrapper {
+    padding-top: 10px;
+    background-color: white;
+    height: 120px;
+}
+#isiPeekingContentLabel {
+    color: #6b6b6b;
+/*    font-size: 16px;*/
+    padding-top: 5px;
+}
+#isiPeekingContentBody {
+/*    font-size: 13px;*/
+    text-align: justify;
+    background-color: white;
+}
+#isiFullContentsWrapper {
+    padding-top: 10px;
+}
+#isiFullContents {
+    /*    position: absolute;*/
+    display: inline;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.isiFullContents-showInPage {
+    display: inline!important;
+}
+
+.isiFullContents-hideFromPage {
+    display: none !important;
+}
+.blackboxWarning {
+    padding: 2%;
+    border: 1px solid black;
+}
+#blackboxWarningLabel {
+    font-style: oblique;
+}
+
+
+/* ----------- Viewport specific styles ----------- */
+/* large tablets (iPad pro) and desktops */
+@media (min-width: 1000px) {
+    .placeholderBodyText {
+        font-size: 18px;
+    }
+    .subCTAButtons {
+        font-size: 18px;
+    }
+    .isiHeaderTitle {
+        font-size: 18px;
+    }
+    .isiHeaderWarning {
+        font-size: 18px;
+    }
+    #isiButton {
+        font-size: 18px;
+    }
+    #isiPeekingContentLabel {
+        font-size: 16px;
+    }
+    #isiPeekingContentBody {
+        font-size: 13px;
+    }
+}
+
+/* smaller iPads/tablets */
+@media (min-width: 450px) and (max-width: 999px) {
+    .placeholderBodyText {
+        font-size: 16px;
+    }
+    .subCTAButtons {
+        font-size: 14px;
+    }
+    .isiHeaderTitle {
+        font-size: 18px;
+    }
+    .isiHeaderWarning {
+        font-size: 16px;
+    }
+    #isiButton {
+        font-size: 18px;
+    }
+    #isiPeekingContentLabel {
+        font-size: 14px;
+    }
+    #isiPeekingContentBody {
+        font-size: 12px;
+    }
+    
+}
+
+/* mobile devices - iphone6+ and smaller */
+@media (max-width: 449px) {
+    .jumbotron h1 {
+        font-size: 20px !important;
+    }
+    .jumbotron p {
+        font-size: 16px !important;
+    }
+    #isiReadLabel {
+        display: none !important;
+    }
+    .subCTAButtons {
+        font-size: 12px;
+    }
+    .isiHeader {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    .isiHeaderTitle {
+        font-size: 13px;
+    }
+    .isiHeaderWarning {
+        font-size: 13px;
+    }
+    #isiButton {
+        font-size: 16px;
+        width: auto !important;
+    }
+    #isiPeekingContentLabel {
+        font-size: 11px;
+    }
+    #isiPeekingContentBody {
+        font-size: 11px;
+    }
+    
+}
